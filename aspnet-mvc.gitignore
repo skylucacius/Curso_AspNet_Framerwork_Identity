@@ -9,9 +9,6 @@
 *.dll.config
 *.cache
 *.suo
-# Include dlls if they’re in the NuGet packages directory
-!/packages/*/lib/*.dll
-!/packages/*/lib/*/*.dll
 # Include dlls if they're in the CommonReferences directory
 !*CommonReferences/*.dll
 ####################
@@ -66,6 +63,8 @@ Thumbs.db
 *.[Cc]ache
 *[Rr]esharper*
 packages
+# The packages folder can be ignored because of Package Restore
+**/packages/*
 NuGet.exe
 _[Ss]cripts
 *.exe
